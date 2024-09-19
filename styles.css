@@ -254,5 +254,89 @@ nav ul li a:hover {
     cursor: not-allowed;
 }
 
+@media only screen and (max-width: 768px) {
+
+    /* Ajustes no header */
+    header nav {
+        flex-direction: column; /* Empilhar os itens do menu */
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Aumenta o espaçamento vertical entre os itens do menu */
+    }
+
+    /* Centralizar o container de login e ajustá-lo em telas menores */
+    .login-container {
+        width: 90%; /* Reduz a largura do container para caber melhor em telas menores */
+        margin: 50px auto; /* Menor margem superior */
+    }
+
+    /* Ajuste das seções no body */
+    main {
+        padding: 10px;
+    }
+
+    /* Para telas menores, ajustamos a tabela da página IES */
+    #tabela-professores th, #tabela-professores td {
+        padding: 5px;
+        font-size: 14px; /* Diminuir o tamanho da fonte para caber em telas menores */
+    }
+
+    /* Ajuste no tamanho das seções */
+    section {
+        margin-bottom: 20px;
+    }
+
+    .progress-bar, .chart, .comments, .stats {
+        width: 100%; /* Ocupa toda a largura da tela */
+    }
+}
+
+/* Para telas menores que 480px (smartphones) */
+@media only screen and (max-width: 480px) {
+    
+    /* Ajustes adicionais em fontes e espaçamento */
+    .login-container {
+        padding: 15px;
+    }
+
+    header .logo h1 {
+        font-size: 22px; /* Diminuir o tamanho do logotipo */
+    }
+
+    /* Ajustar os botões e inputs do formulário */
+    #login-form input, #login-form button {
+        padding: 8px;
+        font-size: 14px; /* Diminuir o tamanho da fonte nos inputs e botões */
+    }
+
+    /* Ajustes para a tabela na página IES */
+    #tabela-professores th, #tabela-professores td {
+        font-size: 12px; /* Diminuir ainda mais a fonte */
+    }
+
+    /* Ajustar o layout da dashboard do professor */
+    .dashboard-container {
+        flex-direction: column;
+    }
+
+    .stat {
+        margin: 10px 0; /* Separar mais os elementos */
+    }
+
+    .chart, .progress-bar {
+        width: 100%; /* Usar toda a largura da tela */
+    }
+
+    .comments textarea {
+        height: 80px; /* Reduzir a altura da área de texto em telas menores */
+    }
+}
+
 /* Estilos existentes continuam iguais */
 /* ... (restante do styles.css permanece igual) */
